@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScreepCode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+    <link rel="stylesheet" href="/static/css/color.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <!-- <link rel="icon" href="https://avatars.githubusercontent.com/u/63686539?v=4" type="image/png"> -->
+</head>
+
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="profile">
+        <div id="profile_img" style="background: url(https://niklas-buse.de/Test-Blog/Profilbild.jpg) center;"></div>
+        <div id="username"><span style="display:block;">Niklas Buse</span><a
+                href="https://github.com/ScreepCode">@ScreepCode</a></div>
+        <div id="userbio" style="display: none;">undefined</div>
+        <div id="about">
+            <span style="display:block;"><i class="fas fa-envelope"></i> &nbsp; <a
+                    href="hmailto:mail@niklas-buse.de">mail@niklas-buse.de</a></span>
+            <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a
+                    href="https://www.niklas-buse.de">https://www.niklas-buse.de</a></span>
+            <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Bruchsal (DE)</span>
+            <div class="socials">
+                <span style="display:block;"><a href="https://discordapp.com/users/295965839713370123" target="_blank"
+                        class="socials"><i class="fab fa-discord"></i></a></span>
+                <span style="display:block;"><a href="https://github.com/ScreepCode" target="_blank" class="socials"><i
+                            class="fab fa-github"></i></a></span>
+                <span style="display:block;"><a href="" target="_blank" class="socials"><i
+                            class="fa-solid fa-phone"></i></a></span>
+                <span style="display:block;"><a href="https://www.linkedin.com/in/niklas-buse/" target="_blank"
+                        class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+            </div>
+        </div>
+    </div>
+    <div id="display">
+        <div id="work">
+            <h1>Work.</h1>
+            <div class="projects" id="work_section">
+                <a href="https://github.com/ScreepCode/DHBW-Programmieren-Vorlesung" target="_blank">
+                    <section>
+                        <div class="section_title">DHBW-Programmieren-Vorlesung</div>
+                        <div class="about_section">
+                            <span style="display:block;">My work on the exercises from the lecture "Programmieren I" at
+                                DHBW
+                                Karlsruhe</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                        </div>
+                    </section>
+                </a>
+
+                <a href="https://github.com/ScreepCode/Webseite-Hommel-Bilder" target="_blank">
+                    <section>
+                        <div class="section_title">Webseite-Hommel-Bilder</div>
+                        <div class="about_section">
+                            <span style="display:block;">Webgallery generated from JSON as Javascript Object</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/ScreepCode/Discord-Bot" target="_blank">
+                    <section>
+                        <div class="section_title">Discord-Bot</div>
+                        <div class="about_section">
+                            <span style="display:block;">Discord Bot based on the Java Discord API (JDA)</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/ScreepCode/JSON-Editoren" target="_blank">
+                    <section>
+                        <div class="section_title">JSON-Editoren</div>
+                        <div class="about_section">
+                            <span style="display:block;">Graphical implementation of a JSON Editor for Websites</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/ScreepCode/Github-API" target="_blank">
+                    <section>
+                        <div class="section_title">Github-API</div>
+                        <div class="about_section">
+                            <span style="display:block;">Simple Tool for JSON based Output of Public Github Repositories
+                                with an set
+                                fixed topic</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/ScreepCode/Eigene-Webseite" target="_blank">
+                    <section>
+                        <div class="section_title">Eigene-Webseite</div>
+                        <div class="about_section">
+                            <span style="display:block;">My own Webpage for representation</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/Dejan-H/ToDoList-Editor" target="_blank">
+                    <section>
+                        <div class="section_title">ToDoList-Editor</div>
+                        <div class="about_section">
+                            <span style="display:block;">A ToDoList-Editor</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/ScreepCode/TypingGame" target="_blank">
+                    <section>
+                        <div class="section_title">TypingGame</div>
+                        <div class="about_section">
+                            <span style="display:block;">Network based typing speed game in Java</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/ScreepCode/Twitch-Bot-V2" target="_blank">
+                    <section>
+                        <div class="section_title">Twitch-Bot-V2</div>
+                        <div class="about_section">
+                            <span style="display:block;">Twitch Bot based on irc.bot for my Twitch Channel
+                                ScreepCode</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                        </div>
+                    </section>
+                </a>
+
+                <a href="https://github.com/ScreepCode/TestRepo" target="_blank">
+                    <section>
+                        <div class="section_title">TestRepo</div>
+                        <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+            </div>
+        </div>
+
+        <div id="footer">
+            <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        setTimeout(function () {
+            document.getElementById("loading").classList.add("animated");
+            document.getElementById("loading").classList.add("fadeOut");
+            setTimeout(function () {
+                document.getElementById("loading").classList.remove("animated");
+                document.getElementById("loading").classList.remove("fadeOut");
+                document.getElementById("loading").style.display = "none";
+            }, 800);
+        }, 1500);
+    </script>
+
+    <script>
+        const magicProjectsGrid = new MagicGrid({
+            container: "#work_section",
+            animate: false,
+            gutter: 30, // default gutter size
+            static: true,
+            useMin: false,
+            maxColumns: 2,
+            useTransform: true
+        });
+
+        $("document").ready(() => {
+            magicProjectsGrid.listen();
+            magicForksGrid.listen();
+        });
+    </script>
+    
+</body>
+
+</html>
