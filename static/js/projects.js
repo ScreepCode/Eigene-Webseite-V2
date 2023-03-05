@@ -3,7 +3,6 @@ async function getRepos(opts = {}) {
     // let requestUrl = `https://api.github.com/users/ScreepCode/repos?type=owner`;
     let requestUrl = "static/json/github_projects.json";
     await $.getJSON(requestUrl, function(data){
-        console.log(data);
         repos = data;
     });
 
@@ -29,6 +28,18 @@ async function buildProjects(){
             </section>
             </a>`;
     }
+
+    let magicProjectsGrid = new MagicGrid({
+        container: document.getElementById("work_section"),
+        static: true,
+        gutter: 30,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true
+    });
+    
+    magicProjectsGrid.listen();
+    magicProjectsGrid.positionItems();
 }
 
 buildProjects();

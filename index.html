@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
     <link rel="stylesheet" href="/static/css/color.css">
     <link rel="stylesheet" href="/static/css/index.css">
-    <script src="/static/js/projects.js" async></script>
+    <script src="/static/js/projects.js"></script>
     <!-- <link rel="icon" href="https://avatars.githubusercontent.com/u/63686539?v=4" type="image/png"> -->
 </head>
 
@@ -62,22 +62,6 @@
                 document.getElementById("loading").style.display = "none";
             }, 400);
         }, 750);
-    </script>
-
-    <script type="text/javascript">
-        const magicProjectsGrid = new MagicGrid({
-            container: "#work_section",
-            gutter: 30, // default gutter size
-            static: true,
-            useMin: false,
-            maxColumns: 2,
-            useTransform: true
-        });
-
-        $(window).on("load", function() {
-            magicProjectsGrid.listen();
-            magicProjectsGrid.positionItems();
-        });
     </script>
 </body>
 
