@@ -1,5 +1,6 @@
 
 :root {
+    --bg-color-lighter: #fff;
     --bg-color: #fff;
     --text-color: rgb(10, 10, 10);
     --blog-gray-color: rgb(80, 80, 80);
@@ -13,6 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --bg-color-lighter: rgb(20, 20, 20);
         --bg-color: rgb(10, 10, 10);
         --text-color: #fff;
         --blog-gray-color: rgb(180, 180, 180);
@@ -37,14 +39,6 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: #fff;
-    }
-
-    .projects section {
-        background: rgb(20, 20, 20);
-    }
-
-    #blog_section section {
-        background: rgb(20, 20, 20);
     }
 
     @media (max-width: 800px) {
