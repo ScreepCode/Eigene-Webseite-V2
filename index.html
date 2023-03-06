@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
     <link rel="stylesheet" href="/static/css/color.css">
     <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/navbar.css">
     <script src="/static/js/projects.js"></script>
     <!-- <link rel="icon" href="https://avatars.githubusercontent.com/u/63686539?v=4" type="image/png"> -->
 </head>
@@ -44,6 +45,15 @@
         </div>
     </div>
     <div id="display">
+        <div class="topnav" id="navigationBar">
+            <a href="">About.</a>
+            <a href="">Work.</a>
+            <a href="">Blog.</a>
+            <a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
         <div id="work">
             <h1>Work.</h1>
             <div class="projects" id="work_section"></div>
@@ -62,6 +72,17 @@
                 document.getElementById("loading").style.display = "none";
             }, 400);
         }, 750);
+    </script>
+
+    <script>
+        function navbarFunction() {
+          var x = document.getElementById("navigationBar");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
     </script>
 </body>
 
