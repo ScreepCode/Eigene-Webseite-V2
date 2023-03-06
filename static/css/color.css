@@ -41,7 +41,7 @@
         -webkit-text-fill-color: #fff;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
         :root {
             --background-image: linear-gradient(0deg,
                     rgba(10, 10, 10, 1),

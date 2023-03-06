@@ -65,6 +65,7 @@ body {
 }
 
 #display {
+  margin-top: 8vh;
   width: 64vw;
   padding: 4vh 3vw;
   height: 92vh;
@@ -225,10 +226,8 @@ body {
 #profile_img {
   width: 180px;
   height: 180px;
-  min-width: 180px;
-  min-height: 180px;
-  max-width: 180px;
-  max-height: 180px;
+  max-width: 24vw;
+  max-height: 24vw;
   border-radius: 50%;
   background-size: cover !important;
   background-repeat: no-repeat !important;
@@ -432,8 +431,9 @@ body {
   background: var(--text-color);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   #profile {
+    margin-top: 20px;
     width: 90vw;
     padding: 4vh 5vw;
     height: 60vh;
