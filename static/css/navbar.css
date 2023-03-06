@@ -1,4 +1,8 @@
 .topnav {
+    position: absolute;
+    top: 4vh;
+    left: 33vw;
+    width: 63vw;
     overflow: hidden;
     background: var(--bg-color-lighter);
     padding: 15px 0 15px 15px;
@@ -49,14 +53,20 @@
 }
 
 @media screen and (max-width: 600px) {
-    .topnav.responsive {
-        position: relative;
+    .topnav{
+        position: absolute;
+        overflow: visible;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 90vw;
+        padding: 10px 5vw 10px 5vw;
     }
 
     .topnav.responsive .icon {
         position: absolute;
-        right: 0;
-        top: 15px;
+        right: 5vw;
+        top: 10px;
     }
 
     .topnav.responsive a {
