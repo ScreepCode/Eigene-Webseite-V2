@@ -1,9 +1,23 @@
 #about_me {
-  margin-left: -15px;
-  margin-top: 50px;
+  margin-top: 2vh;
+  padding-top: 4vh;
 }
 
 #about_me #logo{
-  width: 15vw;
+  margin-right: 15px;
   float: left;
+}
+
+#about_me #about_text{
+  text-align: justify;
+  font-size: 18px;
+}
+
+#about_me #about_text a:visited{
+  color: var(--text-color);
+}
+
+#about_me #about_text a:hover{
+  color: var(--bg-color);
+  background-color: var(--text-color);
 }

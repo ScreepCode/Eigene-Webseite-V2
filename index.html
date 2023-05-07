@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScreepCode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+    <link rel="stylesheet" href="/static/css/color.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+
+<body>
+    <!-- <div id="loading">
+        <div id="spinner"></div>
+    </div> -->
+    <div class="topnav" id="navigationBar">
+        <a href="/">About.</a>
+        <a href="/projekte.html">Work.</a>
+        <a href="/">Blog.</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id="profile">
+        <div id="profile_img" style="background: url(https://niklas-buse.de/Test-Blog/Profilbild.jpg) center;"></div>
+        <div id="username"><span style="display:block;">Niklas Buse</span><a
+                href="https://github.com/ScreepCode">@ScreepCode</a></div>
+        <div id="userbio" style="display: none;">undefined</div>
+        <div id="about">
+            <span style="display:block;"><i class="fas fa-envelope"></i> &nbsp; <a
+                    href="hmailto:mail@niklas-buse.de">mail@niklas-buse.de</a></span>
+            <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a
+                    href="https://www.niklas-buse.de">https://www.niklas-buse.de</a></span>
+            <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Bruchsal (DE)</span>
+            <div class="socials">
+                <span style="display:block;"><a href="https://discordapp.com/users/295965839713370123" target="_blank"
+                        class="socials"><i class="fab fa-discord"></i></a></span>
+                <span style="display:block;"><a href="https://github.com/ScreepCode" target="_blank" class="socials"><i
+                            class="fab fa-github"></i></a></span>
+                <span style="display:block;"><a href="" target="_blank" class="socials"><i
+                            class="fa-solid fa-phone"></i></a></span>
+                <span style="display:block;"><a href="https://www.linkedin.com/in/niklas-buse/" target="_blank"
+                        class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+            </div>
+        </div>
+    </div>
+    <div id="display">
+        <div id="about_me">
+            <h1>About.</h1>
+
+            <div id="logo">
+                <img src="/static/media/Logo_Responsiv.svg" alt="Firmenlogo IT Service Niklas Buse" style="width:250px;"/>
+                <!-- <picture>
+                    <source media="(prefers-color-scheme: light)" srcset="/static/media/Logo_Farbe.svg"  style="width:250px;" />
+                    <img src="/static/media/Logo_Responsiv.svg" alt="Firmenlogo IT Service Niklas Buse" style="width:250px;"/>
+                </picture> -->
+            </div>
+
+            <div id="about_text">
+                <p>
+                    Hey, ich bin Niklas 👋 <br>
+                    <i>alias ScreepCode </i>
+                    <br><br>
+                    Ich bin ein begeisterter Informatiker mit Erfahrung im Hard- und Softwarebereich. <br>
+                    Derzeit bin ich <script>document.write(Math.floor((new Date() - new Date("2004-04-09").getTime())/31557600000));</script> Jahre alt und habe nach meinem Abitur 2022 ein duales Studium bei SAP in der (Angewandten) Informatik begonnen.
+                    Während meiner Schulzeit habe ich auch mein eigenes Gewerbe im Bereich IT-Service und Medientechnik gegründet.
+                    <br><br>
+                    Neben der Entwicklung von Websites wie dieser hier, programmiere ich hauptsächlich Backend-Anwendungen mit den Sprachen Python und Java. 
+                    Während meines Studiums konnte ich außerdem einige Erfahrungen in der Cross-Platform Mobile-Entwicklung sammeln.
+                    Ein Teil meiner Projekte könnt ihr im <a href="/projekte.html">Work.</a> Bereich finden, weitere Projekte und Details Details sind auf meinem <a href="https://github.com/ScreepCode" target="_blank">GitHub Profil</a> zu finden.
+                    <br><br>
+                    Zusätzlich zu meinem Studium bin ich auf der Suche nach Projekten, bei denen ich meine Fähigkeiten vor allem als Softwareentwickler, aber auch als Eventhelfer oder Kameramann einbringen kann. 
+                    Ich bin daran interessiert, meine Kenntnisse und Fähigkeiten in den verschiedensten Bereichen zu erweitern und neue Erfahrungen zu sammeln. 
+                    <br><br>
+                    Wenn du also ein Projekt hast, bei dem ich unterstützen kann, zöger nicht, mich zu kontaktieren.
+                </p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        setTimeout(function () {
+            document.getElementById("loading").classList.add("animated");
+            document.getElementById("loading").classList.add("fadeOut");
+            setTimeout(function () {
+                document.getElementById("loading").classList.remove("animated");
+                document.getElementById("loading").classList.remove("fadeOut");
+                document.getElementById("loading").style.display = "none";
+            }, 400);
+        }, 750);
+    </script>
+
+    <script>
+        function navbarFunction() {
+          var x = document.getElementById("navigationBar");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+</body>
+
+</html>
