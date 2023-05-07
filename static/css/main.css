@@ -56,19 +56,6 @@ body {
     background-repeat: no-repeat;
 }
 
-#footer {
-    width: 100%;
-    padding-top: 8vh;
-    text-align: center;
-}
-
-#footer a {
-    color: var(--text-color) !important;
-    text-decoration: none;
-    font-family: "Questrial", sans-serif;
-    font-weight: bold;
-}
-
 #profile_img {
     width: 180px;
     height: 180px;
