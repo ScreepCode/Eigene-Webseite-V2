@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Niklas Buse - About</title>
+    <title>Niklas Buse - Work</title>
     <link rel="icon" href="/static/media/Logo_Responsiv.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" crossorigin="anonymous">
@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="/static/css/color.css">
     <link rel="stylesheet" href="/static/css/main.css">
     <link rel="stylesheet" href="/static/css/navbar.css">
-    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/projekte.css">
+    <script src="/static/js/projects.js"></script>
 </head>
 
 <body>
     <div class="topnav" id="navigationBar">
-        <a href="/">About.</a>
-        <a href="/projekte.html">Work.</a>
+        <a href="/">Work.</a>
+        <a href="/about.html">About.</a>
         <a href="/blog.html">Blog.</a>
         <a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
           <i class="fa fa-bars"></i>
@@ -50,36 +51,9 @@
         </div>
     </div>
     <div id="display">
-        <div id="about_me">
-            <h1>About.</h1>
-
-            <div id="logo">
-                <img src="/static/media/Logo_Responsiv.svg" alt="Firmenlogo IT Service Niklas Buse" style="width:250px;"/>
-            </div>
-
-            <div id="about_text">
-                <p>
-                    Hey, ich bin Niklas 👋 <br>
-                    <i>alias ScreepCode </i>
-                    <br><br>
-                    Ich bin ein begeisterter Informatiker mit Erfahrung im Hard- und Softwarebereich. <br>
-                    Derzeit bin ich <script>document.write(Math.floor((new Date() - new Date("2004-04-09").getTime())/31557600000));</script> Jahre alt und habe nach meinem Abitur 2022 ein duales Studium bei SAP in der (Angewandten) Informatik begonnen.
-                    Während meiner Schulzeit habe ich auch mein eigenes Gewerbe im Bereich IT-Service und Medientechnik gegründet.
-                    <br><br>
-                    Neben der Entwicklung von Websites wie dieser hier, programmiere ich hauptsächlich Backend-Anwendungen mit den Sprachen Python und Java. 
-                    Während meines Studiums konnte ich außerdem einige Erfahrungen in der Cross-Platform Mobile-Entwicklung sammeln.
-                    Ein Teil meiner Projekte könnt ihr im <a href="/projekte.html">Work.</a> Bereich finden, weitere Projekte und Details Details sind auf meinem <a href="https://github.com/ScreepCode" target="_blank">GitHub Profil</a> zu finden.
-                    <br><br>
-                    Zusätzlich zu meinem Studium bin ich auf der Suche nach Projekten, bei denen ich meine Fähigkeiten vor allem als Softwareentwickler, aber auch als Eventhelfer oder Kameramann einbringen kann. 
-                    Ich bin daran interessiert, meine Kenntnisse und Fähigkeiten in den verschiedensten Bereichen zu erweitern und neue Erfahrungen zu sammeln. 
-                    <br><br>
-                    Wenn du also ein Projekt hast, bei dem ich unterstützen kann, zöger nicht, mich zu kontaktieren.
-                </p>
-            </div>
-        </div>
-
-        <div id="footer">
-            <a href="https://github.com/ScreepCode" target="_blank">made by Niklas Buse</a>
+        <div id="work">
+            <h1>Work.</h1>
+            <div class="projects" id="work_section">
         </div>
     </div>
 </body>
