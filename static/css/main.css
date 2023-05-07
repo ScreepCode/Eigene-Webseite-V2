@@ -13,32 +13,6 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-#loading {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    background: var(--bg-color);
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 #profile {
     width: 24vw;
     padding: 4vh 3vw;
@@ -58,7 +32,6 @@ body {
     margin-top: 8vh;
     width: 64vw;
     padding: 4vh 3vw;
-    height: 92vh;
     display: inline-block;
     padding-left: 33vw;
 }
@@ -85,7 +58,7 @@ body {
 
 #footer {
     width: 100%;
-    padding: 8vh 0px;
+    padding-top: 8vh;
     text-align: center;
 }
 
