@@ -18,14 +18,19 @@
 </head>
 
 <body>
-    <div class="topnav" id="navigationBar">
-        <a href="/">Work.</a>
-        <a href="/about.html">About.</a>
-        <a href="/blog.html">Blog.</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </div>
+    <nav role="navigation" class="topnav" id="navigationBar">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li><a href="/">Work.</a></li>
+                <li><a href="/about.html">About.</a></li>
+                <li><a href="/blog.html">Blog.</a></li>
+            </ul>
+        </div>
+    </nav>
     <div id="profile">
         <div id="profile_img" style="background: url(https://niklas-buse.de/Test-Blog/Profilbild.jpg) center;"></div>
         <div id="username"><span style="display:block;">Niklas Buse</span>
@@ -59,5 +64,4 @@
         </div>
     </div>
 </body>
-<script src="/static/js/navbar.js"></script>
 </html>
