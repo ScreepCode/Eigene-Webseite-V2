@@ -19,34 +19,42 @@
 </head>
 
 <body>
-    <div class="topnav" id="navigationBar">
-        <a href="/">Work.</a>
-        <a href="/about.html">About.</a>
-        <a href="/blog.html">Blog.</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </div>
+    <nav role="navigation" class="topnav" id="navigationBar">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li><a href="/">Work.</a></li>
+                <li><a href="/about.html">About.</a></li>
+                <li><a href="/blog.html">Blog.</a></li>
+            </ul>
+        </div>
+    </nav>
     <div id="profile">
         <div id="profile_img" style="background: url(https://niklas-buse.de/Test-Blog/Profilbild.jpg) center;"></div>
         <div id="username"><span style="display:block;">Niklas Buse</span>
-            <a href="https://github.com/ScreepCode">@ScreepCode</a></div>
+            <a href="https://github.com/ScreepCode">@ScreepCode</a>
+        </div>
         <div id="about">
-            <span style="display:block;"><i class="fa-fw fas fa-envelope"></i> &nbsp; 
+            <span style="display:block;"><i class="fa-fw fas fa-envelope"></i> &nbsp;
                 <a href="mailto:mail@niklas-buse.de">mail@niklas-buse.de</a></span>
-            <span style="display:block;"><i class="fa-fw fas fa-link"></i> &nbsp; 
+            <span style="display:block;"><i class="fa-fw fas fa-link"></i> &nbsp;
                 <a href="https://www.niklas-buse.de">www.niklas-buse.de</a></span>
-            <span style="display:block;"><i class="fa-fw fas fa-map-marker-alt"></i> &nbsp; 
+            <span style="display:block;"><i class="fa-fw fas fa-map-marker-alt"></i> &nbsp;
                 Bruchsal (DE)</span>
             <div class="socials">
-                <span style="display:block;"><a href="https://discordapp.com/users/295965839713370123" target="_blank"class="socials">
-                    <i class="fa-fw fab fa-discord"></i></a></span>
+                <span style="display:block;"><a href="https://discordapp.com/users/295965839713370123" target="_blank"
+                        class="socials">
+                        <i class="fa-fw fab fa-discord"></i></a></span>
                 <span style="display:block;"><a href="https://github.com/ScreepCode" target="_blank" class="socials">
-                    <i class="fa-fw fab fa-github"></i></a></span>
+                        <i class="fa-fw fab fa-github"></i></a></span>
                 <span style="display:block;"><a href="tel:+491624730266" target="_blank" class="socials">
-                    <i class="fa-fw fa-solid fa-phone"></i></a></span>
-                <span style="display:block;"><a href="https://www.linkedin.com/in/niklas-buse/" target="_blank" class="socials">
-                    <i class="fa-fw fab fa-linkedin-in"></i></a></span>
+                        <i class="fa-fw fa-solid fa-phone"></i></a></span>
+                <span style="display:block;"><a href="https://www.linkedin.com/in/niklas-buse/" target="_blank"
+                        class="socials">
+                        <i class="fa-fw fab fa-linkedin-in"></i></a></span>
             </div>
         </div>
     </div>
@@ -54,8 +62,9 @@
         <div id="work">
             <h1>Work.</h1>
             <div class="projects" id="work_section">
+            </div>
         </div>
-    </div>
 </body>
 <script src="/static/js/navbar.js"></script>
+
 </html>
