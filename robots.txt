@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: 
+Sitemap: https://niklas-buse.de/sitemap.xml

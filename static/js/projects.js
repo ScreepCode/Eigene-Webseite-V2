@@ -14,7 +14,7 @@ async function buildProjects(){
     for (var i = 0; i < repos.length; i++) {
         let element = document.getElementById("work_section"); 
         element.innerHTML += `
-            <a href="${repos[i].html_url}" target="_blank">
+            <a href="${repos[i].html_url}" target="_blank" title="${repos[i].name} -> GitHub">
             <section>
                 <div class="section_title">${repos[i].name}</div>
                 <div class="about_section">
