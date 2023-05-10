@@ -12,21 +12,23 @@ async function getRepos(opts = {}) {
 async function buildProjects(){
     const repos = await getRepos();
     for (var i = 0; i < repos.length; i++) {
-        let element = document.getElementById("work_section"); 
-        element.innerHTML += `
-            <a href="${repos[i].html_url}" target="_blank" title="${repos[i].name} -> GitHub">
-            <section>
-                <div class="section_title">${repos[i].name}</div>
-                <div class="about_section">
-                    <span style="display:"block"};">${repos[i].description}</span>
-                </div>
-                <div class="bottom_section">
-                    <span style="display:${repos[i].language == null ? "none" : "inline-block"};"><i class="fas fa-code"></i>&nbsp; ${repos[i].language}</span>
-                    <span><i class="fas fa-star"></i>&nbsp; ${repos[i].stargazers_count}</span>
-                    <span><i class="fas fa-code-branch"></i>&nbsp; ${repos[i].forks_count}</span>
-                </div>
-            </section>
-            </a>`;
+        if(repos[i].name != "ScreepCode"){
+            let element = document.getElementById("work_section"); 
+            element.innerHTML += `
+                <a href="${repos[i].html_url}" target="_blank" title="${repos[i].name} -> GitHub">
+                <section>
+                    <div class="section_title">${repos[i].name}</div>
+                    <div class="about_section">
+                        <span style="display:${repos[i].language == null ? "none" : "inline-block"};">${repos[i].description}</span>
+                    </div>
+                    <div class="bottom_section">
+                        <span style="display:${repos[i].language == null ? "none" : "inline-block"};"><i class="fas fa-code"></i>&nbsp; ${repos[i].language}</span>
+                        <span><i class="fas fa-star"></i>&nbsp; ${repos[i].stargazers_count}</span>
+                        <span><i class="fas fa-code-branch"></i>&nbsp; ${repos[i].forks_count}</span>
+                    </div>
+                </section>
+                </a>`;
+        }
     }
 
     let magicProjectsGrid = new MagicGrid({
