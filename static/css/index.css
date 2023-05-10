@@ -9,7 +9,6 @@
 }
 
 #about_me #about_text{
-  text-align: justify;
   font-size: 18px;
 }
 
@@ -20,4 +19,11 @@
 #about_me #about_text a:hover{
   color: var(--bg-color);
   background-color: var(--text-color);
+}
+
+@media screen and (max-width: 600px) {
+  #about_me #logo{
+    margin-right: 15px;
+    float: none !important;
+  }
 }
