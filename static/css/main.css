@@ -43,6 +43,11 @@ body {
     font-family: "Questrial", sans-serif;
 }
 
+#display > div {
+    margin: 2vh 0px;
+    padding: 4vh 0px !important;
+}
+
 .emoji {
     width: 18px;
     height: 18px;
@@ -86,29 +91,29 @@ body {
     width: 100%;
 }
 
-#about {
+#profile {
     font-size: 18px;
     font-family: "Questrial", sans-serif;
 }
 
-#about a,
+#profile a,
 #username a {
     color: #fff !important;
     text-decoration: none;
     font-weight: bold;
 }
 
-#about a:hover,
+#profile a:hover,
 #username a:hover {
     text-decoration: underline;
 }
 
-#about span {
+#profile span {
     margin: 1vh 0px;
     display: block;
 }
 
-#about span i {
+#profile span i {
     font-size: 16px;
 }
 

@@ -115,11 +115,6 @@
     font-weight: bold;
 }
 
-#blog_section {
-    margin: 2vh 0px;
-    padding: 4vh 0px !important;
-}
-
 #blogs {
     columns: 2;
 }
