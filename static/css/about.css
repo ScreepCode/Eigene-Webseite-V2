@@ -7,6 +7,10 @@
   font-size: 18px;
 }
 
+#about_me #about_text a{
+  color: var(--text-color);
+}
+
 #about_me #about_text a:visited{
   color: var(--text-color);
 }
