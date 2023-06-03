@@ -1,0 +1,12 @@
+#privacy a{
+    color: var(--text-color);
+}
+
+#privacy a:visited{
+    color: var(--text-color);
+}
+  
+#privacy a:hover{
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}

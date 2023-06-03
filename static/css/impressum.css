@@ -1,0 +1,16 @@
+#contact a{
+    color: var(--text-color);
+}
+
+#contact a:visited{
+    color: var(--text-color);
+}
+  
+#contact a:hover{
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}
+
+#liability{
+    margin-top: 6vh;
+}
