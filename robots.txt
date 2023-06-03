@@ -1,3 +1,4 @@
 User-Agent: *
 Disallow: /static/json/
+Disallow: /static/media/unsplash/
 Sitemap: https://niklas-buse.de/sitemap.xml
