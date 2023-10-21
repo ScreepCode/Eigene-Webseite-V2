@@ -24,6 +24,7 @@ body {
     overflow-x: hidden;
     align-items: center;
     font-family: "Poppins", sans-serif;
+    word-wrap: break-word;
 }
 
 #profile {
