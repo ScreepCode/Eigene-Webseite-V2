@@ -1,7 +1,7 @@
 async function getRepos(opts = {}) {
     let repos;
-    // let requestUrl = `https://api.github.com/users/ScreepCode/repos?type=owner`;
-    let requestUrl = "static/json/github_projects.json";
+    let requestUrl = `https://api.github.com/users/ScreepCode/repos?type=owner`;
+    // let requestUrl = "static/json/github_projects.json";
     await $.getJSON(requestUrl, function(data){
         repos = data;
     });
