@@ -58,7 +58,7 @@
   
   img{
     margin-right: 10px;
-    width: 8vw;
+    width: 12vh; /* width should be relativ to view height, and not width, because else the book cover would be too big on screen */
   }
 }
 
