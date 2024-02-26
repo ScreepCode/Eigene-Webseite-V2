@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://www.niklas-buse.de</loc>
+		<loc>https://www.niklas-buse.de/work.html</loc>
 		<priority>1.00</priority>
-		<lastmod>2023-11-19</lastmod>
+		<lastmod>2024-02-26</lastmod>
+	</url>
+	<url>
+		<loc>https://www.niklas-buse.de/blog.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-02-26</lastmod>
+	</url>
+	<url>
+		<loc>https://www.niklas-buse.de/about.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2024-02-26</lastmod>
 	</url>
 	<url>
 		<loc>https://www.niklas-buse.de/now.html</loc>
@@ -11,23 +21,13 @@
 		<lastmod>2024-02-26</lastmod>
 	</url>
 	<url>
-		<loc>https://www.niklas-buse.de/about.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2023-10-20</lastmod>
-	</url>
-	<url>
-		<loc>https://www.niklas-buse.de/blog.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2023-10-20</lastmod>
+		<loc>https://www.niklas-buse.de/impressum.html</loc>
+		<priority>0.30</priority>
+		<lastmod>2024-02-26</lastmod>
 	</url>
 	<url>
 		<loc>https://www.niklas-buse.de/datenschutz.html</loc>
 		<priority>0.30</priority>
-		<lastmod>2023-10-20</lastmod>
-	</url>
-	<url>
-		<loc>https://www.niklas-buse.de/impressum.html</loc>
-		<priority>0.30</priority>
-		<lastmod>2023-10-20</lastmod>
+		<lastmod>2024-02-26</lastmod>
 	</url>
 </urlset>

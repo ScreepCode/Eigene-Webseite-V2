@@ -1,9 +1,10 @@
 # Aktiviere HTTPS
 RewriteEngine On
+RewriteRule ^index.html now.html
 RewriteCond %{REQUEST_SCHEME}::%{HTTP_HOST} ^http::(?:www\.)?(.+)$
 RewriteRule ^ https://www.%1%{REQUEST_URI} [NE,L,R]
 
-ErrorDocument 404 /about.html 
+ErrorDocument 404 /now.html 
 
 <IfModule mod_expires.c>
 <FilesMatch "\.(js|css)$">
