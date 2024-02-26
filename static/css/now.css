@@ -1,0 +1,89 @@
+#now{
+  font-size: 18px;
+}
+
+#now a{
+  color: var(--text-color);
+}
+
+#now a:visited{
+  color: var(--text-color);
+}
+
+#now a:hover{
+  color: var(--bg-color);
+  background-color: var(--text-color);
+}
+
+#LatestPicture {
+  max-width: 80vw;
+}
+
+#now_content {  display: grid;
+  grid-template-columns: fit-content;
+  grid-template-rows: fit-content;
+  gap: 5vh 10vw;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "intro picture"
+    "priorities more";
+}
+
+.intro { grid-area: intro; }
+
+.picture { grid-area: picture; }
+
+.priorities { grid-area: priorities; }
+
+.more {  display: grid;
+  grid-template-columns: fit-content;
+  grid-template-rows: fit-content;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "values values values"
+    "books books books"
+    "books books books";
+  grid-area: more;
+}
+
+.values { grid-area: values;
+}
+
+.books { grid-area: books; }
+
+.book{
+  display: flex;
+  align-items: center;
+  
+  img{
+    margin-right: 10px;
+    width: 8vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #now #logo{
+    margin-right: 15px;
+    float: none !important;
+  }
+
+  #now_content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "intro"
+      "picture"
+      "priorities"
+      "more";
+  }
+
+  .books {
+    flex-direction: column;
+
+    img {
+      width: 20vw;
+    }
+  }
+}
