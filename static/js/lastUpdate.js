@@ -1,5 +1,5 @@
 // Store dates in variables
-const lastEdited = new Date("2024-02-19");
+const lastEdited = new Date("2024-10-06");
 const today = new Date();
 
 // Calculate the difference in milliseconds
